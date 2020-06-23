@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FSD</title>
 </head>
+
 <body>
-    <h1 class="text-success">Hello,world!</h1>
-<script src="js/jquery-3.5.1.slim.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col">1列目</div>
+            <div class="col-auto">2列目</div>
+            <div class="col">3列目</div>
+        </div>
+        <div class="row">
+            <div class="col">2列目</div>
+            <div class="col-md-auto">1列目</div>
+            <div class="col">2列目</div>
+        </div>
+    </div>
+
+    　　<div class="container">
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="w-100"></div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+    </div>
+    
+    　　<div class="container">
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="w-100 d-none d-md-block"></div>
+            <!-- Medium以上ではdisplay:block、未満ではdisplay:none -->
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+    </div>
+
+    <h3>ベース：全幅＋半幅カラム、Medium以上：8＋4カラム</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">col-12 and colmd8</div>
+                <div class="col-6 col-md-4">col-6 and colmd-4</div>
+            </div>
+        </div>
+
+    <h3>半幅カラム3、4列カラム3</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4">col-6 and colmd-4</div>
+                <div class="col-6 col-md-4">col-6 and colmd-4</div>
+                <div class="col-6 col-md-4">col-6 and colmd-4</div>
+            </div>
+        </div>
+    <h3>no-gutterあり</h3>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+    <h3>no-gutterなし</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+    <h3>コンテナなし、no-gutterあり</h3>
+            <div class="row no-gutters">
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">col-9</div>
+                    <div class="col-4">col-4<br>12列を超すため折り返す</div>
+                    <div class="col-6">col-6</div>
+                </div>
+            </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
